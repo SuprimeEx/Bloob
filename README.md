@@ -1,2 +1,0 @@
-# Bloob
-Prueba tecnica
