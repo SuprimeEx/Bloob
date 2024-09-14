@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Aquí declaro que estoy usando HTML5 y defino que el lenguaje del contenido será español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Este meta me permite soportar caracteres especiales como acentos y la ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esta línea hace que el diseño sea responsivo, es decir, que se adapte a dispositivos móviles -->
+    <title>Bloob</title>
+    <!-- Enlazo mi archivo de estilos CSS que está en la carpeta Style -->
+    <link href="Style/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Aquí va la cabecera con el título del proyecto y un menú de navegación -->
+    <header>
+        <div class="olas-container">
+            <h1 class="titulo-olas">BLOOB</h1>
+        </div>
+        <!-- Barra de navegación para moverme entre las secciones de mi página -->
+        <nav>
+            <ul>
+                <!-- En estos enlaces puedo añadir las URL de las distintas secciones cuando las tenga -->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotro</a></li>
+                <li><a href="#">Proyecto</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Este es el contenido principal de mi página, aquí coloco la sección principal o 'hero' -->
+    <main>
+        <section class="hero">
+            <!-- El título con la frase clave del proyecto -->
+            <h2>"El agua es vida, y la vida cuesta"</h2>
+            <!-- Aquí irá el texto que describa el propósito del proyecto -->
+            <p>Simulador del texto que ira a continuación en esta parte del código</p>
+        </section>
+
+        <!--Seccion del Inicio-->
+
+        <!-- Sección Sobre Nosotros -->
+        <section id="sobre-nosotros">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                    <!-- Aquí agregarás el texto que quieras describir sobre el proyecto -->
+                    <p>
+                        Prototipo de pagina web diseñada exclusivamente para uso educativo,
+                        dando asi a conocer el proyecto BLOOB mencionado por Valentina Arango Sánchez a
+                        Santiango Cardoso V.(Desarrolador de este sitio)
+                        
+                    </p>
+                <!-- agregar imágenes o más información aquí -->
+                <div class="imagenes-equipo">
+                    <!-- Aquí podrías poner imágenes de equipo o gráficos -->
+                    <img src="imagen1.jpg" alt="Imagen Equipo">
+                    <img src="imagen2.jpg" alt="Imagen Proyecto">
+                </div>
+            
+            </div>
+</section>
+
+
+    </main>
+
+    <!-- Pie de página donde pongo el copyright de mi proyecto -->
+    <footer>
+        <p>&copy; 2024 - Bloob. Todos los derechos del sitio reservados a ICCA.</p>
+    </footer>
+
+    <script>
+        const titulo = document.querySelector('.titulo-olas');
+        titulo.addEventListener('mousemove', function(e) {
+            const moveX = (e.pageX - this.offsetLeft) / 10;
+            const moveY = (e.pageY - this.offsetTop) / 10;
+            this.style.backgroundPosition = `${moveX}px ${moveY}px`;
+        });
+    </script>
+
+</body>
+</html>

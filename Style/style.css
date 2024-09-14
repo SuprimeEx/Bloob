@@ -1,0 +1,142 @@
+/* Reinicio de márgenes y padding para tener un diseño más controlado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Para que todo el tamaño de los elementos incluya márgenes y bordes */
+}
+
+/* Defino el estilo básico para todo el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Uso una fuente sencilla y clara */
+    background-color: #e0f7fa; /* Fondo en un color azul claro que recuerda al agua */
+    color: #333; /* Color del texto principal en un tono gris oscuro */
+    line-height: 1.6; /* Mantengo el espacio entre líneas para que sea fácil de leer */
+}
+
+/* Aquí defino el estilo para la cabecera de la página */
+header {
+    background-color: #1968b3; /* Un azul más oscuro que evoca el agua pero que es más llamativo */
+    color: white; /* Texto blanco para que contraste con el fondo azul */
+    padding: 20px 0; /* Espacio arriba y abajo del contenido */
+    text-align: center; /* Todo el texto de la cabecera estará centrado */
+}
+
+/* El tamaño y el espacio del título principal dentro del header */
+header h1 {
+    font-size: 3em; /* Título grande para destacar el nombre del proyecto */
+    margin-bottom: 10px; /* Espacio debajo del título para separarlo del menú */
+}
+
+/* Contenedor del título con olas */
+.olas-container {
+    position: relative;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1968b3;
+    overflow: hidden;
+}
+
+/* Estilo sencillo para el título */
+.titulo-olas {
+    font-size: 4em;
+    color: white; /* Mantén el texto en blanco */
+    background-color: #1e88e5; /* Fondo azul que simule las olas */
+    padding: 20px; /* Espacio alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados para un toque moderno */
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un poco de profundidad */
+    margin: 20px auto; /* Margen automático para centrar el título en la página */
+    max-width: 90%; /* Limita el ancho para que no se extienda demasiado */
+}
+
+/* Olas simuladas con bordes redondeados */
+.titulo-olas::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color: #1565c0; /* Un tono azul más oscuro que simule el mar */
+    border-radius: 0 0 50% 50%; /* Crea una curva que se parezca a una ola */
+}
+
+
+
+/* Barra de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección hero que aparece en el centro de la página */
+.hero {
+    background: #ffffff; /* Fondo blanco para que se vea limpio y resalte */
+    padding: 50px 20px; /* Espacio alrededor del contenido */
+    text-align: center; /* Centra el contenido de la sección */
+    border-radius: 15px; /* Bordes redondeados para que se vea más moderno */
+    margin: 20px; /* Dejo un espacio alrededor del contenedor para que no esté pegado al borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle un efecto de profundidad */
+}
+
+/* Título dentro de la sección hero */
+.hero h2 {
+    font-size: 2em; /* Título grande pero no tanto como el principal */
+    color: #1968b3; /* Azul que conecta con el resto del diseño */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilo del texto del párrafo dentro de la sección hero */
+.hero p {
+    font-size: 1.2em; /* Un tamaño ligeramente más grande para que sea fácil de leer */
+}
+
+/* Estilo para la sección Sobre Nosotros */
+#sobre-nosotros {
+    background-color: #f0f8ff; /* Color de fondo suave */
+    padding: 60px 20px; /* Espacio alrededor de la sección */
+    text-align: center; /* Centra el contenido */
+}
+
+#sobre-nosotros h2 {
+    font-size: 2.5em; /* Tamaño del título de la sección */
+    color: #1968b3; /* Color azul para mantener la coherencia del diseño */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#sobre-nosotros p {
+    font-size: 1.2em; /* Tamaño del texto del párrafo */
+    color: #333; /* Color del texto */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+    max-width: 800px; /* Limito el ancho para que no sea muy extenso en pantallas grandes */
+    margin: 0 auto; /* Centro el párrafo */
+}
+
+.imagenes-equipo {
+    display: flex;
+    justify-content: center; /* Alineo las imágenes al centro */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.imagenes-equipo img {
+    width: 150px; /* Tamaño de las imágenes */
+    border-radius: 10px; /* Bordes redondeados para que se vean mejor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #1968b3; /* Misma tonalidad azul del header para consistencia */
+    color: white; /* Texto en blanco para contraste */
+    text-align: center; /* Centra el texto del pie de página */
+    padding: 15px 0; /* Espacio en la parte superior e inferior */
+    margin-top: 30px; /* Dejo un margen antes del pie de página */
+}
