@@ -162,6 +162,62 @@ nav a {
     color: #00796b; /* Color verde azulado para los elementos destacados */
 }
 
+/* Estilo de la sección del proyecto */
+#proyecto {
+    background-color: #ffffff; /* Fondo blanco para que se vea limpio */
+    padding: 60px 20px; /* Espacio alrededor de la sección */
+    text-align: center; /* Centra el contenido */
+    border-top: 5px solid #1968b3; /* Línea azul en la parte superior para destacar la sección */
+    border-bottom: 5px solid #1968b3; /* Línea azul en la parte inferior para destacar la sección */
+}
+
+#proyecto h2 {
+    font-size: 2.5em; /* Tamaño del título de la sección */
+    color: #1968b3; /* Color azul para mantener la coherencia del diseño */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#proyecto p {
+    font-size: 1.2em; /* Tamaño del texto del párrafo */
+    color: #333; /* Color del texto */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+    max-width: 800px; /* Limito el ancho para que no sea muy extenso en pantallas grandes */
+    margin: 0 auto; /* Centro el párrafo */
+}
+
+/* Estilo de la lista de detalles del proyecto */
+.proyecto-detalles {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+    font-size: 1.2em; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    max-width: 800px; /* Limito el ancho de la lista */
+    margin: 0 auto; /* Centro la lista */
+    text-align: left; /* Alineo el texto a la izquierda */
+}
+
+.proyecto-detalles li {
+    margin-bottom: 15px; /* Espacio entre los elementos de la lista */
+}
+
+.proyecto-detalles strong {
+    color: #1968b3; /* Color azul para los elementos destacados */
+}
+
+/* Estilo para las imágenes del proyecto */
+.proyecto-imagenes {
+    display: flex;
+    justify-content: center; /* Alineo las imágenes al centro */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 30px; /* Margen superior para separar de la lista */
+}
+
+.proyecto-imagenes img {
+    width: 300px; /* Tamaño de las imágenes */
+    border-radius: 10px; /* Bordes redondeados para que se vean mejor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
 .imagenes-equipo {
     display: flex;
     justify-content: center; /* Alineo las imágenes al centro */
