@@ -218,6 +218,31 @@ nav a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
 }
 
+@media (max-width: 768px) {
+    .proyecto-imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto-imagenes img {
+        width: 90%; /* Ajusta el tamaño para que sea más flexible */
+    }
+
+    .proyecto-detalles {
+        font-size: 1em; /* Reduce un poco el tamaño del texto */
+        max-width: 100%; /* Deja que el contenido ocupe todo el ancho disponible */
+        padding: 10px; /* Añade algo de espacio interno */
+    }
+
+    #proyecto h2 {
+        font-size: 2em; /* Reduce el tamaño del título en pantallas más pequeñas */
+    }
+
+    #proyecto p {
+        font-size: 1em; /* Reduce ligeramente el tamaño de los párrafos */
+    }
+}
+
 
 
 .imagenes-equipo {
