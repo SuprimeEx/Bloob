@@ -20,10 +20,9 @@
         <nav>
             <ul>
                 <!-- En estos enlaces puedo añadir las URL de las distintas secciones cuando las tenga -->
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
                 <li><a href="#">Proyecto</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -33,12 +32,16 @@
         <section class="hero">
             <!-- El título con la frase clave del proyecto -->
             <h2>"El agua es vida, y la vida cuesta"</h2>
-            <!-- Aquí irá el texto que describa el propósito del proyecto -->
-            <p>Simulador del texto que ira a continuación en esta parte del código</p>
+            <!--Proposito del proyecto-->
+            <p>En este sitio/blog, te presentaremos un proyecto propuesto por Juan José, Arnoldo Todo
+                poderoso y Valentina Arango(cosita hermosa te amo). 
+                Este proyecto tiene como objetivo abordar la crisis del agua, una problemática crítica tanto a 
+                nivel local como mundial.
+            </p>
+            <p>Descubre cómo estamos trabajando para proteger este recurso vital y aprender más sobre 
+                nuestras iniciativas.
+            </p>
         </section>
-
-        <!--Seccion del Inicio-->
-
         <!-- Sección Sobre Nosotros -->
         <section id="sobre-nosotros">
             <div class="container">
@@ -47,18 +50,40 @@
                     <p>
                         Prototipo de pagina web diseñada exclusivamente para uso educativo,
                         dando asi a conocer el proyecto BLOOB mencionado por Valentina Arango Sánchez a
-                        Santiango Cardoso V.(Desarrolador de este sitio)
+                        Santiango Cardoso V.(Desarrolador de este sitio) y un ingeniero gatuno
                         
                     </p>
                 <!-- agregar imágenes o más información aquí -->
                 <div class="imagenes-equipo">
                     <!-- Aquí podrías poner imágenes de equipo o gráficos -->
-                    <img src="imagen1.jpg" alt="Imagen Equipo">
-                    <img src="imagen2.jpg" alt="Imagen Proyecto">
+                    <img src="ingeniero.jpg" alt="Imagen Equipo">
+                    <img src="https://i.pinimg.com/236x/69/9e/6f/699e6f8a04f41f95090aac2504f74223.jpg" alt="Imagen Proyecto">
                 </div>
             
             </div>
-</section>
+        </section>
+
+        <!--Seccion del proyecto-->
+        <section>
+
+
+        </section>
+
+
+
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <div class="container">
+                <h2>Contacto (publucidad :p xd)</h2>
+                <p>Si quieres un sitio personalizado mi empresa es ICCA:</p>
+                <ul class="contact-info">
+                    <li><strong>Teléfono:</strong>+57 3024758642</li>
+                    <li><strong>Correo Electrónico:</strong> iccacardosona.com</li>
+                    <li><strong>Dirección:</strong> Mi casita</li>
+                </ul>
+            </div>
+        </section>
+
 
 
     </main>
@@ -67,15 +92,6 @@
     <footer>
         <p>&copy; 2024 - Bloob. Todos los derechos del sitio reservados a ICCA.</p>
     </footer>
-
-    <script>
-        const titulo = document.querySelector('.titulo-olas');
-        titulo.addEventListener('mousemove', function(e) {
-            const moveX = (e.pageX - this.offsetLeft) / 10;
-            const moveY = (e.pageY - this.offsetTop) / 10;
-            this.style.backgroundPosition = `${moveX}px ${moveY}px`;
-        });
-    </script>
 
 </body>
 </html>
