@@ -178,12 +178,34 @@ nav a {
 }
 
 #proyecto p {
-    font-size: 1.2em; /* Tamaño del texto del párrafo */
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
+    background-color: #f0f8ff; /* Fondo suave para resaltar el párrafo */
+    padding: 20px; /* Espaciado interno para que no quede pegado */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 30px; /* Espacio debajo del párrafo para separarlo de la lista */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada para dar profundidad */
+    border-left: 5px solid #1968b3; /* Barra decorativa en el lado izquierdo */
+    position: relative; /* Para el pseudo-elemento de fondo */
     color: #333; /* Color del texto */
-    margin-bottom: 30px; /* Espacio debajo del párrafo */
-    max-width: 800px; /* Limito el ancho para que no sea muy extenso en pantallas grandes */
-    margin: 0 auto; /* Centro el párrafo */
+    max-width: 800px; /* Limita el ancho para pantallas grandes */
+    margin: 20px auto; /* Centra el párrafo en la página */
 }
+
+/* Pseudo-elemento para efecto de fondo */
+#proyecto p::before {
+    content: ''; /* Crea un pseudo-elemento antes del párrafo */
+    position: absolute; /* Posiciona el pseudo-elemento */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-image: url('ruta-a-tu-imagen-de-fondo.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegúrate de que la imagen cubra todo el área */
+    opacity: 0.1; /* Opacidad de la imagen para que no opaque el texto */
+    border-radius: 10px; /* Mantiene bordes redondeados */
+    z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
+}
+
 
 /* Estilo de la lista de detalles del proyecto */
 .proyecto-detalles {
@@ -195,6 +217,7 @@ nav a {
     margin: 0 auto; /* Centro la lista */
     text-align: left; /* Alineo el texto a la izquierda */
 }
+
 
 .proyecto-detalles li {
     margin-bottom: 15px; /* Espacio entre los elementos de la lista */
@@ -244,7 +267,6 @@ nav a {
 }
 
 
-
 .imagenes-equipo {
     display: flex;
     justify-content: center; /* Alineo las imágenes al centro */
@@ -265,3 +287,43 @@ footer {
     padding: 15px 0; /* Espacio en la parte superior e inferior */
     margin-top: 30px; /* Dejo un margen antes del pie de página */
 }
+
+/* Efecto de aparición suave en secciones */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Botones del menú de navegación con efecto hover */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1e88e5; /* Cambia a un azul claro al hacer hover */
+}
+
+/* Efecto hover en imágenes */
+.proyecto-imagenes img {
+    transition: transform 0.3s ease;
+}
+
+.proyecto-imagenes img:hover {
+    transform: scale(1.05); /* Agranda un poco la imagen al pasar el cursor */
+}
+
+/* Estilo del botón "ir arriba" */
+#goTop {
+    display: none;
+}
+
+
