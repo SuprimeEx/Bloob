@@ -191,20 +191,7 @@ nav a {
     margin: 20px auto; /* Centra el párrafo en la página */
 }
 
-/* Pseudo-elemento para efecto de fondo */
-#proyecto p::before {
-    content: ''; /* Crea un pseudo-elemento antes del párrafo */
-    position: absolute; /* Posiciona el pseudo-elemento */
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    background-image: url('ruta-a-tu-imagen-de-fondo.jpg'); /* Imagen de fondo */
-    background-size: cover; /* Asegúrate de que la imagen cubra todo el área */
-    opacity: 0.1; /* Opacidad de la imagen para que no opaque el texto */
-    border-radius: 10px; /* Mantiene bordes redondeados */
-    z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
-}
+
 
 
 /* Estilo de la lista de detalles del proyecto */
