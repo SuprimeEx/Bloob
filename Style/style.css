@@ -122,44 +122,55 @@ nav a {
 
 /* Estilo de la sección de contacto */
 #contacto {
-    background-color: #e0f7fa; /* Fondo azul claro similar al del body pero ligeramente distinto */
-    padding: 60px 20px; /* Espacio alrededor de la sección */
-    text-align: center; /* Centra el contenido */
-    border-top: 5px solid #1968b3; /* Línea azul en la parte superior para destacar la sección */
-    border-bottom: 5px solid #1968b3; /* Línea azul en la parte inferior para destacar la sección */
+    background-color: #e0f7fa; /* Mismo tono que el fondo general pero con mayor intensidad */
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 3px solid #1968b3;
+    border-bottom: 3px solid #1968b3;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 #contacto h2 {
-    font-size: 2.5em; /* Tamaño del título de la sección */
-    color: #00796b; /* Color verde azulado para diferenciarse del azul de otras secciones */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 2.5em; /* Tamaño que se ajusta a las otras secciones */
+    color: #1968b3; /* Color coherente con el resto del sitio */
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 #contacto p {
-    font-size: 1.2em; /* Tamaño del texto del párrafo */
-    color: #333; /* Color del texto */
-    margin-bottom: 30px; /* Espacio debajo del párrafo */
-    max-width: 800px; /* Limito el ancho para que no sea muy extenso en pantallas grandes */
-    margin: 0 auto; /* Centro el párrafo */
+    font-size: 1.2em;
+    color: #333; /* Mismo color del cuerpo de texto */
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
 }
 
-/* Estilo para la lista de información de contacto */
 .contact-info {
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el padding */
-    font-size: 1.2em; /* Tamaño del texto */
-    color: #333; /* Color del texto */
-    max-width: 600px; /* Limito el ancho de la lista */
-    margin: 0 auto; /* Centro la lista */
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1em; /* Ligero ajuste para mantener armonía */
 }
 
 .contact-info li {
-    margin-bottom: 15px; /* Espacio entre los elementos de la lista */
-    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 15px;
+    color: #1968b3;
 }
 
 .contact-info strong {
-    color: #00796b; /* Color verde azulado para los elementos destacados */
+    color: #00796b; /* Verde azulado para darle un toque especial sin ser excesivo */
+}
+
+.contact-info a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #004d40; /* Cambio sutil en hover */
 }
 
 /* Estilo de la sección del proyecto */
